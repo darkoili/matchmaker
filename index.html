@@ -93,6 +93,31 @@
         let question4Response = document.getElementById('QuestionFour').selectedOptions[0].value;
         let question5Response = document.getElementById('QuestionFive').selectedOptions[0].value;
 
+        console.log("Question 1 Answers:")
+        console.log(document.getElementById('QuestionOne').selectedOptions[0].text);
+        console.log(document.getElementById('QuestionOne').selectedOptions[0].value);
+        console.log(question1Response);
+
+        console.log("Question 2 Answers:")
+        console.log(document.getElementById('QuestionTwo').selectedOptions[0].text);
+        console.log(document.getElementById('QuestionTwo').selectedOptions[0].value);
+        console.log(question2Response);
+
+        console.log("Question 3 Answers:")
+        console.log(document.getElementById('QuestionThree').selectedOptions[0].text);
+        console.log(document.getElementById('QuestionThree').selectedOptions[0].value);
+        console.log(question3Response);
+
+        console.log("Question 4 Answers:")
+        console.log(document.getElementById('QuestionFour').selectedOptions[0].text);
+        console.log(document.getElementById('QuestionFour').selectedOptions[0].value);
+        console.log(question4Response);
+
+        console.log("Question 5 Answers:")
+        console.log(document.getElementById('QuestionFive').selectedOptions[0].text);
+        console.log(document.getElementById('QuestionFive').selectedOptions[0].value);
+        console.log(question5Response);
+
         let question1Compatability = 5 - Math.abs(question1Response - DESIRED_RESPONSE[0]);
         let question2Compatability = 5 - Math.abs(question2Response - DESIRED_RESPONSE[0]);
         let question3Compatability = 5 - Math.abs(question1Response - DESIRED_RESPONSE[4]);
