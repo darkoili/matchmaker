@@ -6,7 +6,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: ##87CEFA;
+            background-color: #87CEFA;
             line-height: 1.6;
         }
     </style>
@@ -19,7 +19,7 @@
     
 <label> Pizza is the greatest food of all time.</label>
     <br>
-<select id=" QuestionOne">
+<select id="QuestionOne">
     <option value="5">Strongly Agree</option>
     <option value="4">Agree</option>
     <option value="3">Neutral</option>
@@ -30,7 +30,7 @@
     <br>
 <label> Reading is a fun, relaxing activity.</label>
     <br>
-    <select id=" QuestionTwo">
+    <select id="QuestionTwo">
     <option value="5">Strongly Agree</option>
     <option value="4">Agree</option>
     <option value="3">Neutral</option>
@@ -41,7 +41,7 @@
     <br>
 <label> Roller Coasters are a great and thrilling ammusement park ride.</label>
     <br>
-    <select id=" QuestionThree">
+    <select id="QuestionThree">
     <option value="5">Strongly Agree</option>
     <option value="4">Agree</option>
     <option value="3">Neutral</option>
@@ -51,7 +51,7 @@
     <br>
 <label> H&M is the best men's wear fashion brand.</label>
     <br>
-    <select id=" QuestionFour">
+    <select id="QuestionFour">
     <option value="5">Strongly Agree</option>
     <option value="4">Agree</option>
     <option value="3">Neutral</option>
@@ -61,7 +61,7 @@
     <br>
 <label> Hot coffee is better than iced coffee.</label>
     <br>
-    <select id=" QuestionFive">
+    <select id="QuestionFive">
     <option value="5">Strongly Agree</option>
     <option value="4">Agree</option>
     <option value="3">Neutral</option>
@@ -81,9 +81,6 @@
     
 <script>
    console.log("Darko Ilic MatchMaker");
-
-      document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility;
-    }
 
     function calculateCompatibility() {
         console.log("calculateCompatibility()");
@@ -146,8 +143,9 @@
         totalCompatibility *= 100/ MAX_SCORE;
         totalCompatability = Math.round(totalCompatibility);
         console.log("totalCompatibility="+totalCompatibility);
+         document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility;
+    }
         
-
 </script>      
 </body>
     
