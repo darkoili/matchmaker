@@ -85,13 +85,11 @@
     function calculateCompatibility() {
         console.log("calculateCompatibility()");
 
-        const DESIRED_RESPONSE = [
-                5,
-                5,
-                1,
-                5,
-                4
-            ]
+        const DESIRED_RESPONSE1 = [5]
+        const DESIRED_RESPONSE2 = [5]
+        const DESIRED_RESPONSE3 = [1]
+        const DESIRED_RESPONSE4 = [5]
+        const DESIRED_RESPONSE5 = [4]
         
         const MAX_SCORE= 20
         
@@ -126,11 +124,11 @@
         console.log(document.getElementById("QuestionFive").selectedOptions[0].value);
         console.log(question5Response);
 
-        let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[5]);
-        let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[5]);
-        let question3Compatibility = 1 - Math.abs(question1Response - DESIRED_RESPONSE[1]);
-        let question4Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[5]);
-        let question5Compatibility = 4 - Math.abs(question1Response - DESIRED_RESPONSE[4]);
+        let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE1[0]);
+        let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE2[0]);
+        let question3Compatibility = 1 - Math.abs(question1Response - DESIRED_RESPONSE3[0]);
+        let question4Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE4[0]);
+        let question5Compatibility = 4 - Math.abs(question1Response - DESIRED_RESPONSE5[0]);
 
         console.log("a1="+question1Compatibility);
         console.log("a2="+question2Compatibility);
