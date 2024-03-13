@@ -73,10 +73,15 @@
     
     <button onclick="calculateCompatibility()">Calculate Compatibility</button>
     <p id="compatibility"></p>
+    
+    <br>
     <br>
    
 <script>
    console.log("Darko Ilic MatchMaker");
+
+      document.getElementById("compatability").innerHTML = "Compatibility to Darko is: " + totalCompatibility;
+    }
 
     function calculateCompatibility() {
         console.log("calculateCompatibility()");
@@ -140,8 +145,6 @@
         totalCompatability = Math.round(totalCompatibility);
         console.log("totalCompatibility="+totalCompatibility);
         
-        document.getElementById("compatability").innerHTML = "Compatibility to Darko is: " + totalCompatibility;
-    }
 
 </script>      
 </body>
