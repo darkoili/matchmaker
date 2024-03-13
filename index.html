@@ -91,7 +91,7 @@
         const DESIRED_RESPONSE4 = [5]
         const DESIRED_RESPONSE5 = [4]
         
-        const MAX_SCORE= 25
+        const MAX_SCORE= 20
         
         let question1Response = document.getElementById("QuestionOne").selectedOptions[0].value;
         let question2Response = document.getElementById("QuestionTwo").selectedOptions[0].value;
@@ -126,9 +126,9 @@
 
         let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE1[0]);
         let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE2[0]);
-        let question3Compatibility = 1 - Math.abs(question1Response - DESIRED_RESPONSE3[0]);
+        let question3Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE3[0]);
         let question4Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE4[0]);
-        let question5Compatibility = 4 - Math.abs(question1Response - DESIRED_RESPONSE5[0]);
+        let question5Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE5[0]);
 
         console.log("a1="+question1Compatibility);
         console.log("a2="+question2Compatibility);
