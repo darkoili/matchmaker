@@ -80,6 +80,31 @@
     function calculateCompatability() {
         console.log("calculateCompatability()");
 
+        const DESIRED_RESPONSE = [
+                5,
+                5,
+                1,
+                5,
+                4
+            ]
+        let question1Response = document.getElementById('QuestionOne').selectedOptions[0].value;
+        let question2Response = document.getElementById('QuestionTwo').selectedOptions[0].value;
+        let question3Response = document.getElementById('QuestionThree').selectedOptions[0].value;
+        let question4Response = document.getElementById('QuestionFour').selectedOptions[0].value;
+        let question5Response = document.getElementById('QuestionFive').selectedOptions[0].value;
+
+        let question1Compatability = 5 - Math.abs(question1Response - DESIRED_RESPONSE[0]);
+        let question2Compatability = 5 - Math.abs(question2Response - DESIRED_RESPONSE[0]);
+        let question3Compatability = 5 - Math.abs(question1Response - DESIRED_RESPONSE[4]);
+        let question4Compatability = 5 - Math.abs(question1Response - DESIRED_RESPONSE[0]);
+        let question5Compatability = 5 - Math.abs(question1Response - DESIRED_RESPONSE[1]);
+
+        console.log("a1="+question1Compatability);
+        console.log("a2="+question2Compatability);
+        console.log("a3="+question3Compatability);
+        console.log("a4="+question4Compatability);
+        console.log("a5="+question5Compatability);
+        
         document.getElementById("compatability").innerHTML = "Compatability to Darko is...";
     }
 
