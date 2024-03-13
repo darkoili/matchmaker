@@ -71,16 +71,16 @@
     
     <br>
     <br>
-    <button onclick="calculateCompatability()">Calculate Compatability</button>
-    <p id="compatability"> </p>
-
+    <button onclick="calculateCompatibility()">Calculate Compatibility</button>
+    <p id="compatibility"> </p>
+    
     <br>
     <br>
 <script>
    console.log("Darko Ilic MatchMaker");
 
-    function calculateCompatability() {
-        console.log("calculateCompatability()");
+    function calculateCompatibility() {
+        console.log("calculateCompatibility()");
 
         const DESIRED_RESPONSE = [
                 5,
@@ -89,6 +89,8 @@
                 5,
                 4
             ]
+        const MAX_SCORE= 20
+        
         let question1Response = document.getElementById('QuestionOne').selectedOptions[0].value;
         let question2Response = document.getElementById('QuestionTwo').selectedOptions[0].value;
         let question3Response = document.getElementById('QuestionThree').selectedOptions[0].value;
@@ -120,19 +122,25 @@
         console.log(document.getElementById('QuestionFive').selectedOptions[0].value);
         console.log(question5Response);
 
-        let question1Compatability = 5 - Math.abs(question1Response - DESIRED_RESPONSE[0]);
-        let question2Compatability = 5 - Math.abs(question2Response - DESIRED_RESPONSE[0]);
-        let question3Compatability = 5 - Math.abs(question1Response - DESIRED_RESPONSE[4]);
-        let question4Compatability = 5 - Math.abs(question1Response - DESIRED_RESPONSE[0]);
-        let question5Compatability = 5 - Math.abs(question1Response - DESIRED_RESPONSE[1]);
+        let question1Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[0]);
+        let question2Compatibility = 5 - Math.abs(question2Response - DESIRED_RESPONSE[0]);
+        let question3Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[4]);
+        let question4Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[0]);
+        let question5Compatibility = 5 - Math.abs(question1Response - DESIRED_RESPONSE[1]);
 
-        console.log("a1="+question1Compatability);
-        console.log("a2="+question2Compatability);
-        console.log("a3="+question3Compatability);
-        console.log("a4="+question4Compatability);
-        console.log("a5="+question5Compatability);
+        console.log("a1="+question1Compatibility);
+        console.log("a2="+question2Compatibility);
+        console.log("a3="+question3Compatibility);
+        console.log("a4="+question4Compatibility);
+        console.log("a5="+question5Compatibility);
+
+        let totalCompatibility = question1Compatibility + question2Compatibility + question3Compatibility + question4Compatibility + question5Compatibility;
+
+        totalCompatibility *= 100/ MAX_SCORE;
+        totalCompatability = Math.round(totalCompatibility);
+        console.log("totalCompatibility="+totalCompatibility);
         
-        document.getElementById("compatability").innerHTML = "Compatability to Darko is...";
+        document.getElementById("compatability").innerHTML = "Compatibility to Darko is...";
     }
 
 </script>      
