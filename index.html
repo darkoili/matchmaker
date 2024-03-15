@@ -201,13 +201,13 @@
         console.log("totalCompatibility="+totalCompatibility);
          
 
-        if (101>totalCompatability>81) {
+        if (81<totalCompatability) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility "Woah, Your a match! Let's go brab soon pizza tonight?";
     }
-         if (80>totalCompatability>60) {
+         else (60<totalCompatability<81) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility "Your a close match! Let's talk some more?";
     }
-         if (59>totalCompatability>0) {
+         else (totalCompatability<59) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility "Sorry, your not a match! It's not you, it's me... Let's still be friends?";
     }
         
