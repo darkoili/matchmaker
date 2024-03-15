@@ -203,6 +203,10 @@
         totalCompatibility *= 100/ MAX_SCORE;
         totalCompatability = Math.round(totalCompatibility);
         console.log("totalCompatibility="+totalCompatibility);
+
+          const totalCompatibility = (0, 100) => {
+          return x >= 0 && x <= 100;
+    }
          
 
         if (totalCompatibility>25) {
