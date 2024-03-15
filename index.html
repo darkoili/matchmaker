@@ -136,6 +136,8 @@
     
     <br>
     <br>
+    <br>
+    <p>Last updated: 03/15/2024</p>
     
 <script>
    console.log("Darko Ilic MatchMaker");
@@ -201,13 +203,13 @@
         console.log("totalCompatibility="+totalCompatibility);
          
 
-        if (81<totalCompatibility<101) {
+        if (totalCompatibility<101) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility "Woah, Your a match! Let's go brab soon pizza tonight?";
     }
-         else (60<totalCompatibility<80) {
+         if (totalCompatibility<80) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility "Your a close match! Let's talk some more?";
     }
-         else (totalCompatibility<59) {
+         if (totalCompatibility<59) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility "Sorry, your not a match! It's not you, it's me... Let's still be friends?";
     }
         
