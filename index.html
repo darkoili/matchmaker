@@ -204,18 +204,16 @@
         totalCompatability = Math.round(totalCompatibility);
         console.log("totalCompatibility="+totalCompatibility);
 
-          const totalCompatibility = (0, 100) => {
-          return x >= 0 && x <= 100;
-    }
-         
 
-        if (totalCompatibility>25) {
+        if (totalCompatibility>79) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility; + "Woah, Your a match! Let's go brab soon pizza tonight?";
     }
-         else (totalCompatibility>20) {
+            
+         else (totalCompatibility>59) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility; +  "Your a close match! Let's talk some more?";
     }
-         else (totalCompatibility>15) {
+        
+         else (totalCompatibility>39) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility; + "Sorry, your not a match! It's not you, it's me... Let's still be friends?";
     }
         
