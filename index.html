@@ -130,12 +130,12 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
     
     <button onclick="calculateCompatibility()" style="position: absolute ;left: 50% ;transform: translateX(-50%)" class="button button:hover">Calculate Compatibility</button>
     <p id="compatibility"></p>
     
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -205,13 +205,13 @@
         console.log("totalCompatibility="+totalCompatibility);
          
 
-        if (totalCompatibility<25) {
+        if (totalCompatibility>25) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility; + "Woah, Your a match! Let's go brab soon pizza tonight?";
     }
-         else (totalCompatibility<20) {
+         else (totalCompatibility>20) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility; +  "Your a close match! Let's talk some more?";
     }
-         else (totalCompatibility<15) {
+         else (totalCompatibility>15) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility; + "Sorry, your not a match! It's not you, it's me... Let's still be friends?";
     }
         
