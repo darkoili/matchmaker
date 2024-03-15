@@ -71,7 +71,7 @@
 </head>
 <body>
     <h1 class="center">      Darko Ilic's Matchmaker </h1>
-     <h2 class="center"> Instructions:  Respond to the next five statements below using the Strong Agree, Agree, Neutral, Disagree, or Strongly Disagree options to quiz your love compatibility to Darko. Once all five options have selected, click on the Calculate Compatibility button to view your compatibility results !
+     <h2 class="center"> Instructions:  Respond to the next five statements below using the Strongly Agree, Agree, Neutral, Disagree, or Strongly Disagree dropdown options to quiz your love compatibility to Darko. Once all five options have selected, click on the Calculate Compatibility button to view your compatibility results !
 </h2>
     <br>
     
@@ -209,11 +209,11 @@
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility; + "Woah, Your a match! Let's go brab soon pizza tonight?";
     }
             
-         else (totalCompatibility>59) {
+         else if (totalCompatibility>59) {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility; +  "Your a close match! Let's talk some more?";
     }
         
-         else (totalCompatibility>39) {
+         else {
             document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility; + "Sorry, your not a match! It's not you, it's me... Let's still be friends?";
     }
         
