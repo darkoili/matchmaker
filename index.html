@@ -206,8 +206,11 @@
         totalCompatability = Math.round(totalCompatibility);
         console.log("totalCompatibility="+totalCompatibility);
 
-        document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility + "Woah! Your a perfect match"!;
+        document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility;
     }
+      if (totalcompatability>79) {
+          document.getElementById("compatibility").innerHTML = "Woah!Your a match! Let's go grab food sometime?";
+      }
 </script>      
 </body>
     
