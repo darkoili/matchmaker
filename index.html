@@ -215,13 +215,13 @@
     const mediumCompatiblity= 19 + 18 + 17 + 16 + 15 + 14;
     const lowCompatbility= 13 + 12 + 11 + 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + 0;
 
-    if (totalCompatibility= highCompatibilty) {
+    if (totalCompatibility<highCompatibilty) {
         document.getElementById("compatibilityPhrase").innerHTML = "Woah! Your an exact match! Let's go grab some pizza?";
     }
-    if (totalCompatibility= mediumCompatiblity) {
+    if (totalCompatibility<mediumCompatiblity) {
         document.getElementById("compatibilityPhrase2").innerHTML = "Cool...Your almost a match! Let's get to knew each other some more? ";
     }
-    if (totalCompatibility= lowCompatbility) {
+    if (totalCompatibility<lowCompatbility) {
         document.getElementById("compatibilityPhrase3").innerHTML = "Oops...Your not a match ! :( It's not you it's me? ";
     }
 </script>      
