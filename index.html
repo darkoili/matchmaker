@@ -126,7 +126,7 @@
     
 <label class="center"> Hot coffee is better than iced coffee.</label>
     <br>
-    <select id="QuestionFive" class="center" required>
+    <select id="QuestionFive" class="center" onchange="error()" required>
     <option value="">Select One</option>
     <option value="5">Strongly Agree</option>
     <option value="4">Agree</option>
@@ -229,6 +229,10 @@
     if (totalCompatibility *= lowCompatbility) {
         document.getElementById("compatibilityPhrase3").innerHTML = "Yikes, time to run away...Your not a match ! It's not you, it's me...? ";
     }
+    function error() {
+  prefer = document.select[0].browsers.value;
+  alert("Please select Strongly Agree, Agree, Neutral, Disagree, or Strongly Disagree to continue");
+}
 </script>      
 </body>
 </html>
