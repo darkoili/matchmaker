@@ -211,18 +211,18 @@
        document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility  + "..........Question summary:" + "..........Question 1 compatability is " + question1Compatibility + "..........Question 2 compatability is " + question2Compatibility + "..........Question 3 compatability is " + question3Compatibility + "..........Question 4 compatability is " + question4Compatibility + "..........Question 5 compatability is " + question5Compatibility;
     }
 
-    const highCompatibilty= 25 + 24 + 23 + 22 + 21 + 20;
+    const highCompatibilty= 100 + 99 + 98 + 97 + 96 + 95;
     const mediumCompatiblity= 19 + 18 + 17 + 16 + 15 + 14;
     const lowCompatbility= 13 + 12 + 11 + 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 + 0;
 
     if (totalCompatibility<highCompatibilty) {
-        document.getElementById("compatibilityPhrase").innerHTML = "Woah! Your an exact match! Let's go grab some pizza?";
+        document.getElementById("compatibilityPhrase").innerHTML = "It's true love! Your an exact match! Let's go grab some pizza?";
     }
     if (totalCompatibility<mediumCompatiblity) {
-        document.getElementById("compatibilityPhrase2").innerHTML = "Cool...Your almost a match! Let's get to knew each other some more? ";
+        document.getElementById("compatibilityPhrase2").innerHTML = "Cool...Your almost a match! Let's just stay friends? ";
     }
     if (totalCompatibility<lowCompatbility) {
-        document.getElementById("compatibilityPhrase3").innerHTML = "Oops...Your not a match ! :( It's not you it's me? ";
+        document.getElementById("compatibilityPhrase3").innerHTML = "Yikes, time to run away...Your not a match ! It's not youm it's me...? ";
     }
 </script>      
 </body>
