@@ -151,13 +151,13 @@
     function calculateCompatibility() {
         console.log("calculateCompatibility()");
 
-        const DESIRED_RESPONSE1 = [5]
-        const DESIRED_RESPONSE2 = [5]
-        const DESIRED_RESPONSE3 = [1]
-        const DESIRED_RESPONSE4 = [5]
-        const DESIRED_RESPONSE5 = [4]
+        const DESIRED_RESPONSE1 = [5];
+        const DESIRED_RESPONSE2 = [5];
+        const DESIRED_RESPONSE3 = [1];
+        const DESIRED_RESPONSE4 = [5];
+        const DESIRED_RESPONSE5 = [4];
         
-        const MAX_SCORE= 25
+        const MAX_SCORE= 25;
         
         let question1Response = document.getElementById("QuestionOne").selectedOptions[0].value;
         let question2Response = document.getElementById("QuestionTwo").selectedOptions[0].value;
@@ -211,13 +211,17 @@
        document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility  + "..........Question summary:" + "..........Question 1 compatability is " + question1Compatibility + "..........Question 2 compatability is " + question2Compatibility + "..........Question 3 compatability is " + question3Compatibility + "..........Question 4 compatability is " + question4Compatibility + "..........Question 5 compatability is " + question5Compatibility;
     }
 
-    if (totalCompatibility= 25,24,23,22,21,20) {
+    const highCompatibilty= 25,24,23,22,21,20;
+    const mediumCompatiblity= 19,18,17,16,15,14;
+    const lowCompatbility= 13,12,11,10,9,8,7,6,5,4,3,2,1,0;
+
+    if (totalCompatibility= highCompatibilty) {
         document.getElementById("compatibilityPhrase").innerHTML = "Woah! Your an exact match! Let's go grab some pizza?";
     }
-    if (totalCompatibility= 19,18,17,16,15,14) {
+    if (totalCompatibility= mediumCompatiblity) {
         document.getElementById("compatibilityPhrase2").innerHTML = "Cool...Your almost a match! Let's get to knew each other some more? ";
     }
-    if (totalCompatibility= 13,12,11,10,9,8) {
+    if (totalCompatibility= lowCompatbility) {
         document.getElementById("compatibilityPhrase3").innerHTML = "Oops...Your not a match ! :( It's not you it's me? ";
     }
 </script>      
