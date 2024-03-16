@@ -66,6 +66,7 @@
         h1     {color: White;}
         h2     {color: White;} 
         label  {color: White;font-weight: bold;line-height: 1.45}
+        p      {color: White;}
         
     </style>
 </head>
@@ -135,7 +136,7 @@
     <button class="center" onclick="calculateCompatibility()">Calculate Compatibility</button>
     <p id="compatibility"></p>
     
-    <p id="compatibilityPhrase"></p> <p id="compatibilityPhrase2"></p>
+    <p id="compatibilityPhrase"></p> <p id="compatibilityPhrase2"></p> <p id="compatibilityPhrase3"></p>
     <br>
     <br>
     <br>
@@ -213,7 +214,7 @@
     if (totalCompatibility= 100,99,98,97,96,95,94,93,92,91,90,89,88,87,86,85) {
         document.getElementById("compatibilityPhrase").innerHTML = "Woah! Your an exact match! Let's go grab some pizza?";
     }
-    else (totalCompatibility= 84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65) {
+    else if (totalCompatibility= 84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65) {
         document.getElementById("compatibilityPhrase2").innerHTML = "Cool...Your almost a match! Let's get to knew each other some more? ";
     }
     
