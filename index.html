@@ -206,35 +206,9 @@
         totalCompatability = Math.round(totalCompatibility);
         console.log("totalCompatibility="+totalCompatibility);
 
-       function compatibilityScores(100, 79) 
-    {
-      var highScores;
-
-      highScores = scores.filter( function(100){ return 100 > threshold });
-
-      if( !highScores || !highScores.length )
-        return document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility; 
-            "Woah, Your a match! Let's go brab soon pizza tonight?";
+        document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility;
+            "Sorry, your not a match! It's not you, it's me... Let's still be friends?";
     
-      return document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility;
-             "Your a close match! Let's talk some more?";
-        }    
-
-        old
-        if (totalCompatibility>79) {
-            document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility; 
-            "Woah, Your a match! Let's go brab soon pizza tonight?";
-    }
-            
-         else if (totalCompatibility>59) {
-            document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility;
-             "Your a close match! Let's talk some more?";
-    }
-        
-         else {
-            document.getElementById("compatibility").innerHTML = "Compatibility to Darko is: " + totalCompatibility;
-             "Sorry, your not a match! It's not you, it's me... Let's still be friends?";
-    }
         
 </script>      
 </body>
