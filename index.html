@@ -141,7 +141,7 @@
     <button class="center" onclick="calculateCompatibility()">Calculate Compatibility</button>
     <p id="compatibility"></p>
     
-    <p id="compatibilityPhrase"></p> <p id="compatibilityPhrase2"></p> <p id="compatibilityPhrase3"></p>
+    <p id="compatibilityPhrase"></p>
     <br>
     <br>
     <br>
@@ -220,14 +220,10 @@
     var mediumCompatiblity= [80];
     var lowCompatbility= [60];
 
-    if (totalCompatibility == 100) {
-        document.getElementById("compatibilityPhrase").innerHTML = "It's true love! Your an exact match! Let's go grab some pizza?";
-    }
-    if (totalCompatibility == mediumCompatiblity) {
-        document.getElementById("compatibilityPhrase2").innerHTML = "Cool...Your almost a match! Let's just stay friends? ";
-    }
-    if (totalCompatibility == lowCompatbility) {
-        document.getElementById("compatibilityPhrase3").innerHTML = "Yikes, time to run away...Your not a match ! It's not you, it's me...? ";
+    if (totalCompatibility == highCompatibilty) {Phrase = "It's true love! Your an exact match! Let's go grab some pizza?"};
+    if (totalCompatibility == mediumCompatiblity) {Phrase = "Cool...Your almost a match! Let's just stay friends? "};
+    if (totalCompatibility == lowCompatbility) {Phrase = "Yikes, time to run away...Your not a match ! It's not you, it's me...? "};
+    document.getElementById("compatibilityPhrase").innerHTML = Phrase;
     }
   
 </script>      
