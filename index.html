@@ -221,10 +221,15 @@
     var lowCompatbility= [60];
 
     if (totalCompatibility == highCompatibilty) {Phrase = "It's true love! Your an exact match! Let's go grab some pizza?"};
-    else (totalCompatibility == mediumCompatiblity) {Phrase = "Cool...Your almost a match! Let's just stay friends? "};
-    else (totalCompatibility == lowCompatbility) {Phrase = "Yikes, time to run away...Your not a match ! It's not you, it's me...? "};
-    document.getElementById("compatibilityPhrase").innerHTML = Phrase;
+    if (totalCompatibility == mediumCompatiblity) {Phrase = "Cool...Your almost a match! Let's just stay friends? "};
+    if (totalCompatibility == lowCompatbility) {Phrase = "Yikes, time to run away...Your not a match ! It's not you, it's me...? "};
+    
+        document.getElementById("compatibilityPhrase").innerHTML = Phrase;
     }
+
+    function choice1(select) {
+     alert(select.options[select.selectedIndex].text);
+}
   
 </script>      
 </body>
